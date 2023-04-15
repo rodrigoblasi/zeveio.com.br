@@ -19,7 +19,6 @@
             margin: 0;
         }
 
-
         .background-image {
             position: fixed;
             top: 0;
@@ -35,17 +34,17 @@
 
         .container {
             max-width: 600px;
-            margin: 0 auto;
+            margin: 2rem;
             padding: 2rem;
             text-align: center;
             background-color: rgba(208, 200, 200, 0.35);
             border-radius: 10px;
         }
-            .container_logo {
+
+        .logo {
             max-width: 500px;
-            margin: 0 auto;
-            padding: 2rem;
-            text-align: center;
+            margin: 0 auto; /* centraliza o elemento horizontalmente */
+            display: block; /* adiciona o display block para centralizar */
             background-color: rgb(255, 255, 255);
             border-radius: 10px;
         }
@@ -57,23 +56,12 @@
         .social-links a {
             display: inline-block;
             margin: 0 0.5rem;
-            font-size: 5rem;
+            font-size: 8rem;
             text-decoration: none;
         }
 
-        .logo {
-            max-width: 500px;
-            margin-bottom: 1rem;
-        }
-        
-        .social-links a i.fi-brands-facebook {
-            color: rgb(0, 0, 0);
-        }
-
-        .social-links a i.fi-brands-instagram {
-            color: rgb(0, 0, 0);
-        }
-
+        .social-links a i.fi-brands-facebook,
+        .social-links a i.fi-brands-instagram,
         .social-links a i.fi-brands-whatsapp {
             color: rgb(0, 0, 0);
         }
@@ -82,18 +70,18 @@
 <body>
     <div class="background-image"></div>
     <div class="container">
-        <img src="logo.png" alt="Logotipo Cutelaria Zé Véio" class="container_logo">
+        <img src="logo.png" alt="Logotipo Cutelaria Zé Véio" class="logo mx-auto" style="max-width: 500px;">
         <div class="social-links">
             <a href="https://www.instagram.com/cutelaria_ze_veio/" target="_blank" rel="noopener noreferrer" title="Instagram">
                 <i class="fi fi-brands-instagram"></i>
             </a>
-            <a href="https://www.facebook.com/ze_veio_cutelaria" target="_blank" rel="noopener noreferrer" title="Facebook">
-                <i class="fi fi-brands-facebook"></i>
-            </a>
             <a href="https://wa.me/message/F54ID5ZBDNAQG1" target="_blank" rel="noopener noreferrer" title="Whatsapp">
                 <i class="fi fi-brands-whatsapp"></i>
             </a>
-            
+            <a href="https://www.facebook.com/ze_veio_cutelaria" target="_blank" rel="noopener noreferrer" title="Facebook">
+                <i class="fi fi-brands-facebook"></i>
+            </a>
+
         </div>
     </div>
 </body>
